@@ -37,7 +37,7 @@ spline-viewer:active {
     right: 5%;
     top: 30%;
 
-    font-size: 2rem;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     text-align: center;
     display: grid;
@@ -56,7 +56,7 @@ spline-viewer:active {
 
 span{
     color: yellow;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 p {
