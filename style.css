@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* background-image: linear-gradient(70deg, #eb57d5 1%, rgb(255, 250, 250) 2%, #eb57d5 99%) */
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(236,188,255,1) 49%, rgba(182,0,255,1) 100%);
+}
+
+spline-viewer {
+    position: fixed;
+    width: 200%;
+    height: 100%;
+    left: -80%;
+    top: -10%;
+    /* background-color: aliceblue; */
+
+    transition: scale .4s;
+}
+
+spline-viewer:hover {
+    cursor: grab;
+}
+
+spline-viewer:active {
+    cursor: grabbing;
+    scale: 1.1;
+}
+
+.console {
+    max-width: 38rem;
+    position: fixed;
+    left: 30%;
+    right: 5%;
+    top: 30%;
+
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a1 a1"
+                         "a2 a3";
+    /* gap: 1rem ; */
+    font-weight: 900;
+    background-color: rgba(255, 0, 247, 0.01);
+    backdrop-filter: blur(100px);
+
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+span{
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+p {
+    /* background-color: blue; */
+}
+.a1,.a2,.a3{
+    padding: 1rem;
+}
+.a1 {
+    grid-area: a1;
+    
+}
+
+.a2 {
+    grid-area: a2;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.a3 {
+    border-top: 2px solid rgb(255, 255, 255);
+    grid-area: a3;
+}
